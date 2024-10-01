@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="muffin.png">
+
+    <!-- Custom Styles -->
+    <style>
+        /* General page settings */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Body Background: Starry Image */
+        body {
+            background-image: url('Starry.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 150px; /* Added padding to separate from header */
+        }
+
+    /* Header Styling with Fading White */
+        header {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)); /* Fading white */
+            padding: 10px 20px; /* Reduced padding */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between; /* Separate logo and navigation */
+            align-items: center;
+            height: 60px; /* Fixed header height */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow to the header */
+        }
+
+        .logo-img {
+            width: 150px; /* Further reduced logo size */
+            height: auto;
+        }
+
+        /* Navigation Links */
+        .header-links-main {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header-link-item {
+            margin: 0 10px; /* Reduced margin */
+        }
+
+        .header-link {
+            font-size: 14px; /* Further reduced font size */
+            color: #0D0A35; /* Custom hyperlink color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .header-link:hover {
+            color: #4169e1; /* Deep blue on hover */
+        }
+
+        /* Transparent White Background for Greeting Section */
+        .greeting-container {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            text-align: center;
+            margin-top: 20px; /* Adjusted margin to separate from header */
+        }
+
+        /* Individual font for Greeting Text */
+        .greeting-text {
+            font-size: 24px;
+            color: black; /* Changed to black */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* About Me Container with Table */
+        .AboutMe-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            margin: 20px auto; /* Center the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for depth */
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Center and resize images inside table cells */
+        td img {
+            width: 150px;  /* Set the width for both images */
+            height: 150px; /* Set the height for both images */
+            display: block;
+            margin: auto;  /* Center the images in the cell */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            .header-links-main {
+                margin-top: 10px;
+                flex-direction: column;
+            }
+
+            .header-link-item {
+                margin: 10px 0;
+            }
+
+            .greeting-container {
+                width: 80%;
+            }
+
+            .greeting-text {
+                font-size: 20px;
+            }
+
+            .AboutMe-container {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="header" class="header">
+  <a href="IctPortfolio.html">
+        <img class="logo-img" alt="Ict Portfolio.com" src="Logo.png" height="10" width="20">
+  </a>
+
+    <!-- Navigation on the right -->
+    <nav>
+        <ul class="header-links-main">
+            <li class="header-link-item">
+                <a href="ICTPortfolio1.html" class="header-link">Home</a>
+            </li>
+            <li class="header-link-item">
+                <a href="#about-me" class="header-link">Traveller</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Lessons.html" class="header-link">Lessons</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Adventures.html" class="header-link">Adventures</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Reflection.html" class="header-link">Reflection</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Greeting Section with Transparent Background -->
+<div class="greeting-container">
+ <h2 align="center">.・。.・゜✭・.・✫・゜・。.About Me.・。.・゜✭・.・✫・゜・。.</h2>
+    <p class="greeting-text">
+        Greetings! I am <b>FRANCHESCA JAY N. CORRALES</b>, a student in <u>9-Fairness</u> for the academic year 2024-2025. Welcome to my Electronic Portfolio for the 1st Quarter. Come with me, and let us experience my journey as we venture through my personal and academic achievements. Feel free to scroll down and uncover more secrets!
+    </p>
+</div>
+
+<!-- Centered About Me Section with Transparent White Background -->
+<div class="AboutMe-container" id="about-me">
+
+    <table>
+        <tr>
+            <th colspan="2">Secrets!</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Franchesca Jay N. Corrales, aka Chesca</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>Birthday</td>
+            <td>June 14, 2010</td>
+        </tr>
+        <tr>
+            <td>MBTI</td>
+            <td>INFP</td>
+        </tr>
+        <tr>
+            <td>Likes</td>
+            <td>Food (particularly sweet things), Cats, F1, Charles Leclerc(!)</td>
+        </tr>
+        <tr>
+            <td>Dislikes</td>
+            <td>Annoying people, insects, Charles Leclerc haters!!</td>
+        </tr>
+        <tr>
+            <td>Favorite Song</td>
+            <td>
+                <audio controls>
+                    <source src="Aphrodite.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>Me??????</td>
+            <td>
+                <img src="Mirror1.jpg" alt="me">  
+                <img src="Mirror2.jpg" alt="me">
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
+
+
+

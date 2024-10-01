@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="muffin.png">
+
+    <!-- Custom Styles -->
+    <style>
+        /* General page settings */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Body Background: Starry Image */
+        body {
+            background-image: url('Starry.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Header Styling - Fading White with Smaller Size */
+        header {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+            padding: 10px 20px; /* Reduced padding */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px; /* Fixed height */
+        }
+
+        /* Make sure the body content doesn't overlap the header */
+        body {
+            padding-top: 80px; /* Add enough padding to ensure no overlap */
+        }
+
+        /* Smaller Logo */
+        .logo-img {
+            width: 150px; /* Reduced logo width */
+            height: auto;
+        }
+
+        /* Navigation Links */
+        .header-links-main {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header-link-item {
+            margin: 0 10px;
+        }
+
+        .header-link {
+            font-size: 14px; /* Reduced font size */
+            color: #0D0A35;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .header-link:hover {
+            color: #4169e1;
+        }
+
+        /* Transparent White Background for Welcome Section */
+        .welcome-container {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            text-align: center;
+            margin-top: 120px;
+        }
+
+        .welcome-text {
+            font-size: 50px;
+            color: #1e90ff;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .description {
+            font-size: 20px;
+            color: #2f4f4f;
+            font-family: Arial, sans-serif;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        /* Reflection Container */
+        .reflection-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            margin: 40px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Forms Container */
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .header-links-main {
+                margin-top: 10px;
+                flex-direction: column;
+            }
+
+            .header-link-item {
+                margin: 10px 0;
+            }
+
+            .logo-img {
+                width: 120px; /* Smaller logo for small screens */
+            }
+
+            .welcome-container {
+                width: 80%;
+            }
+
+            .welcome-text {
+                font-size: 36px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .reflection-container,
+            .form-container {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="header" class="header">
+    <!-- Logo on the left -->
+    <a href="IctPortfolio.html">
+        <img class="logo-img" alt="Ict Portfolio.com" src="Logo.png" height="10" width="20">
+    </a>
+
+    <!-- Navigation on the right -->
+    <nav>
+        <ul class="header-links-main">
+            <li class="header-link-item">
+                <a href="ICTPortfolio1.html" class="header-link">Home</a>
+            </li>
+            <li class="header-link-item">
+                <a href="AboutMe.html" class="header-link">Traveller</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Lessons.html" class="header-link">Lessons</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Adventures.html" class="header-link">Adventures</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Reflection.html" class="header-link">Reflection</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Reflection Section with Transparent White Background -->
+<div class="reflection-container">
+    <h1 align="center"> ˚₊‧꒰აReflection໒꒱ ‧₊˚ </h1>
+    <ol>
+        <li><b>XHTML VS HTML</b>
+            <ul>
+                <li>XHTML represents a more structured evolution of HTML, enforcing stricter syntax rules such as proper nesting and closing of tags, which enhances code readability and maintainability. XHTML offers a reliable alternative for developers focused on creating robust web applications.</li>
+            </ul>
+        </li>
+        <li><b>LIST</b>
+            <ul>
+                <li>HTML lists, including ordered and unordered lists, are essential for organizing content. They enhance readability and user experience, particularly when presenting sequences or related items clearly.</li>
+            </ul>
+        </li>
+        <li><b>FORMS</b>
+            <ul>
+                <li>HTML forms are crucial for allowing user interaction and data collection, such as registration or feedback. Mastering forms and validation enhances the overall user experience and functionality of a website.</li>
+            </ul>
+        </li>
+        <li><b>HYPERLINKS</b>
+            <ul>
+                <li>HTML hyperlinks link different pages and resources, improving navigation and creating a connected web experience. Mastering hyperlinks helps improve the accessibility and usability of web projects.</li>
+            </ul>
+        </li>
+        <li><b>OVERALL</b>
+            <ul>
+                <li>Reflecting on the first quarter, I learned the importance of structured, well-organized content, user interaction through forms, seamless navigation using hyperlinks, and the value of clean, standards-compliant code for web development.</li>
+            </ul>
+        </li>
+    </ol>
+</div>
+
+<!-- Forms Section with Transparent White Background -->
+<div class="form-container">
+    <h1 align="center">Survey ˖⋆࿐໋</h1>
+    <form action="corrales ict9 portfolio surveydone.html" method="get">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            Name: <input name="textbox1" type="text" style="width: 100%; max-width: 400px;"><br><br>
+            Gender:<br>
+            <select name="gender" size="1" style="width: 100%; max-width: 400px;">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="anonymous">Prefer not to say</option>
+            </select><br><br>
+            Rate the content of the website:<br>
+            <div style="text-align: center;">
+                <input type="radio" name="radio1">Amazing
+                <input type="radio" name="radio1">Good
+                <input type="radio" name="radio1">Bad 
+                <input type="radio" name="radio1">Awful<br><br>
+            </div>
+            Rate the functionality of the website:<br>
+            <div style="text-align: center;">
+                <input type="radio" name="radio2">Amazing
+                <input type="radio" name="radio2">Good
+                <input type="radio" name="radio2">Bad
+                <input type="radio" name="radio2">Awful<br><br>
+            </div>
+            Rate the overall experience of the website:<br>
+            <div style="text-align: center;">
+                <input type="radio" name="radio3">Amazing
+                <input type="radio" name="radio3">Good
+                <input type="radio" name="radio3">Bad
+                <input type="radio" name="radio3">Awful<br><br>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+

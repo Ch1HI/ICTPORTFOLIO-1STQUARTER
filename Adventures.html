@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="muffin.png">
+
+    <!-- Custom Styles -->
+    <style>
+        /* General page settings */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Body Background: Starry Image */
+        body {
+            background-image: url('Starry.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 315px; /* Adjusted padding to prevent overlap */
+        }
+
+        /* Header Styling with Fading White */
+        header {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)); /* Fading white */
+            padding: 10px 20px; /* Reduced padding */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between; /* Separate logo and navigation */
+            align-items: center;
+            height: 60px; /* Fixed header height */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow to the header */
+        }
+
+        .logo-img {
+            width: 150px; /* Reduced logo size */
+            height: auto;
+        }
+
+        /* Navigation Links */
+        .header-links-main {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header-link-item {
+            margin: 0 10px;
+        }
+
+        .header-link {
+            font-size: 14px; /* Reduced font size */
+            color: #0D0A35; /* Custom hyperlink color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .header-link:hover {
+            color: #4169e1; /* Deep blue on hover */
+        }
+
+        /* Transparent White Background for Welcome Section */
+        .welcome-container {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            text-align: center;
+            margin-top: 40px; /* Ensure the welcome container doesn't overlap */
+        }
+
+        /* Individual font for Welcome Text */
+        .welcome-text {
+            font-size: 50px;
+            color: #1e90ff;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Individual font for Description Text */
+        .description {
+            font-size: 20px;
+            color: #2f4f4f; /* Muted dark gray */
+            font-family: Arial, sans-serif;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .description u {
+            text-decoration-color: #1e90ff; /* Underline matches link color */
+        }
+
+        /* Adventures Section with Transparent Background */
+        .adventures-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            margin: 40px auto; /* Center the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for depth */
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Set fixed size for adventure images */
+        .adventure-img {
+            width: 200px;  /* Set desired width */
+            height: 150px; /* Set desired height */
+            object-fit: cover; /* Maintain aspect ratio and cover the space */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            .header-links-main {
+                margin-top: 10px;
+                flex-direction: column;
+            }
+
+            .header-link-item {
+                margin: 10px 0;
+            }
+
+            .welcome-container {
+                width: 80%;
+            }
+
+            .welcome-text {
+                font-size: 36px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .adventures-container {
+                width: 80%; /* Responsive adventures width */
+            }
+
+            .adventure-img {
+                width: 100%; /* Adjust for responsiveness */
+                height: auto; /* Maintain aspect ratio */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="header" class="header">
+    <!-- Logo on the left -->
+    <a href="IctPortfolio.html">
+        <img class="logo-img" alt="Ict Portfolio.com" src="Logo.png" height="10" width="20">
+    </a>
+
+    <!-- Navigation on the right -->
+    <nav>
+        <ul class="header-links-main">
+            <li class="header-link-item">
+                <a href="ICTPortfolio1.html" class="header-link">Home</a>
+            </li>
+            <li class="header-link-item">
+                <a href="AboutMe.html" class="header-link">Traveller</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Lessons.html" class="header-link">Lessons</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Adventures.html" class="header-link">Adventures</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Reflection.html" class="header-link">Reflection</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Adventures Section with Transparent Background -->
+<div class="adventures-container">
+    <h2 align="center">.・。.・゜✭・.・✫・゜・。.ADVENTURES.・。.・゜✭・.・✫・゜・。.</h2>
+
+    <table>
+        <tr>
+            <th colspan="2">MAPEH MUSIC VIDEO</th>
+        </tr>
+        <tr>
+            <td><video controls> <source src="MV.mp4" type="video/mp4">  </video> </td>
+            <td> We recorded this over the course of a few days, and crammed it to the very last second! Kudos to Jandi for carrying the editing!</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th colspan="2">SCIENCE QUIZ BEE</th>
+        </tr>
+        <tr>
+            <td><img class="adventure-img" src="SCI.jpg" alt="QUIZ BEE"></td>
+            <td> I participated in the Quiz Bee alongside Justin, Emman, and Migs from my class and won 2nd Place.</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th colspan="2">SCIENCE PERFORMANCE TASK</th>
+        </tr>
+        <tr>
+            <td><img class="adventure-img" src="SCI2.jpg" alt="PT"> </td>
+            <td>There were two groups in total that presented, and everyone got 100/100! </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th colspan="2">FOUNDATION DAY</th>
+        </tr>
+        <tr>
+            <td><img class="adventure-img" src="FDAY.jpg" alt="FDAY"></td>
+            <td> I was able to hang out with my friends from the other sections and relax and have fun. I was also able to play games with them and watch a volleyball game. </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
+

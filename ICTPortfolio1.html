@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="Bunny.jpg">
+
+    <!-- Custom Styles -->
+    <style>
+        /* General page settings */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Body Background: Starry Image */
+        body {
+            background-image: url('Starry.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Header Styling with Smaller Size */
+        header {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)); /* Fading white */
+            padding: 10px 20px; /* Reduced padding */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between; /* Separate logo and navigation */
+            align-items: center;
+            height: 60px; /* Fixed height */
+        }
+
+        /* Smaller Logo */
+        .logo-img {
+            width: 150px; /* Reduced width */
+            height: auto;
+        }
+
+        /* Navigation Links */
+        .header-links-main {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header-link-item {
+            margin: 0 10px; /* Adjusted spacing between links */
+        }
+
+        .header-link {
+            font-size: 14px; /* Smaller font size */
+            color: #0D0A35; /* Custom hyperlink color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .header-link:hover {
+            color: #4169e1; /* Deep blue on hover */
+        }
+
+        /* Transparent White Background for Welcome Section */
+        .welcome-container {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            text-align: center;
+            margin-top: 120px; /* To push it below the header */
+        }
+
+        /* Individual font for Welcome Text */
+        .welcome-text {
+            font-size: 50px;
+            color: #300084; /* Updated color */
+            font-family: Georgia, serif; /* Updated font family */
+        }
+
+        /* Individual font for Description Text */
+        .description {
+            font-size: 20px;
+            color: #2f4f4f; /* Muted dark gray */
+            font-family: Arial, sans-serif;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .description u {
+            text-decoration-color: #1e90ff; /* Underline matches link color */
+        }
+
+        /* Menu Section */
+        .menu-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
+            padding: 20px;
+            text-align: center;
+            margin: 40px auto; /* Add space around the menu */
+            border-radius: 10px;
+            width: 60%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        }
+
+        /* About Me Container with Table */
+        .AboutMe-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            margin: 20px auto; /* Center the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for depth */
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                height: auto; /* Ensure the height adapts on small screens */
+            }
+
+            .header-links-main {
+                margin-top: 10px;
+                flex-direction: column;
+            }
+
+            .header-link-item {
+                margin: 10px 0;
+            }
+
+            .logo-img {
+                width: 120px; /* Smaller logo for small screens */
+            }
+
+            .welcome-container {
+                width: 80%;
+            }
+
+            .welcome-text {
+                font-size: 36px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .AboutMe-container {
+                width: 80%;
+            }
+
+            .menu-container {
+                width: 80%; /* Responsive menu width */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="header" class="header">
+    <!-- Logo on the left -->
+    <a href="IctPortfolio.html">
+        <img class="logo-img" alt="Ict Portfolio.com" src="Logo.png" height="10" width="20">
+    </a>
+
+    <!-- Navigation on the right -->
+    <nav>
+        <ul class="header-links-main">
+            <li class="header-link-item">
+                <a href="ICTPortfolio1.html" class="header-link">Home</a>
+            </li>
+            <li class="header-link-item">
+                <a href="AboutMe.html" class="header-link">Traveller</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Lessons.html" class="header-link">Lessons</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Adventures.html" class="header-link">Adventures</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Reflection.html" class="header-link">Reflection</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Centered Welcome Section with Transparent White Background -->
+<div class="welcome-container">
+    <p class="welcome-text">ₓ˚. ୭ ˚○◦˚.˚◦○˚ ୧ .˚ₓ<br>Welcome to My ICT Portfolio!<br>ₓ˚. ୭ ˚○◦˚.˚◦○˚ ୧ .˚ₓ</p>
+    <p class="description" style="font-family:Times New Roman">
+       Take a peek of my journey through the first quarter of grade 9!<br>
+       Click any button on the top right corner to unveil the mysteries that await!
+    </p>
+</div>
+
+</body>
+</html>
+
+
+
+
+

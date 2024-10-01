@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="muffin.png">
+
+    <!-- Custom Styles -->
+    <style>
+        /* General page settings */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Body Background: Starry Image */
+        body {
+            background-image: url('Starry.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the start */
+            flex-direction: column;
+            padding-top: 310px; /* Added padding to prevent overlap with header */
+        }
+
+      /* Header Styling - Fading White with Smaller Size */
+        header {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+            padding: 10px 20px; /* Reduced padding */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px; /* Fixed height */
+        }
+
+    /* Header Styling - Fading White with Smaller Size */
+        header {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+            padding: 10px 20px; /* Reduced padding */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px; /* Fixed height */
+        }
+
+        /* Smaller Logo */
+        .logo-img {
+            width: 150px; /* Reduced logo width */
+            height: auto;
+        }
+
+        /* Navigation Links */
+        .header-links-main {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header-link-item {
+            margin: 0 10px;
+        }
+
+        .header-link {
+            font-size: 14px; /* Reduced font size */
+            color: #0D0A35;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .header-link:hover {
+            color: #4169e1;
+        }
+
+        /* Smaller Logo */
+        .logo-img {
+            width: 150px; /* Reduced logo width */
+            height: auto;
+        }
+
+        /* Navigation Links */
+        .header-links-main {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header-link-item {
+            margin: 0 10px;
+        }
+
+        .header-link {
+            font-size: 14px; /* Reduced font size */
+            color: #0D0A35;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .header-link:hover {
+            color: #4169e1;
+        }
+
+        /* Centered Welcome Section with Transparent White Background */
+        .welcome-container {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            text-align: center;
+            margin-top: 20px; /* Adjust margin to fit below the header */
+        }
+
+        /* Individual font for Welcome Text */
+        .welcome-text {
+            font-size: 50px;
+            color: #1e90ff;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Individual font for Description Text */
+        .description {
+            font-size: 20px;
+            color: #2f4f4f; /* Muted dark gray */
+            font-family: Arial, sans-serif;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .description u {
+            text-decoration-color: #1e90ff; /* Underline matches link color */
+        }
+
+        /* Lessons Section with Transparent Background */
+        .lessons-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            margin: 40px auto; /* Center the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for depth */
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px; /* Space between tables */
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Image sizing */
+        img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 200px; /* Set a maximum width for uniformity */
+            max-height: 150px; /* Set a maximum height for uniformity */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            .header-links-main {
+                margin-top: 10px;
+                flex-direction: column;
+            }
+
+            .header-link-item {
+                margin: 10px 0;
+            }
+
+            .welcome-container {
+                width: 80%;
+            }
+
+            .welcome-text {
+                font-size: 36px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .lessons-container {
+                width: 80%; /* Responsive lessons width */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="header" class="header">
+    <!-- Logo on the left -->
+    <a href="IctPortfolio.html">
+        <img class="logo-img" alt="Ict Portfolio.com" src="Logo.png" height="10" width="20">
+    </a>
+
+    <!-- Navigation on the right -->
+    <nav>
+        <ul class="header-links-main">
+            <li class="header-link-item">
+                <a href="ICTPortfolio1.html" class="header-link">Home</a>
+            </li>
+            <li class="header-link-item">
+                <a href="AboutMe.html" class="header-link">Traveller</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Lessons.html" class="header-link">Lessons</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Adventures.html" class="header-link">Adventures</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Reflection.html" class="header-link">Reflection</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+</div>
+
+<!-- Lessons Section with Transparent Background -->
+<div class="lessons-container">
+    <h2 align="center">.・。.・゜✭・.・✫・゜・。.LESSONS.・。.・゜✭・.・✫・゜・。.</h2>
+
+    <table>
+        <tr>
+            <th colspan="2">LESSON 1</th>
+        </tr>
+        <tr>
+            <td><img src="L1_Code.jpg" alt="Lesson 1 Code"></td>
+            <td><img src="L1_Output.jpg" alt="Lesson 1 Output"></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th colspan="2">LESSON 2</th>
+        </tr>
+        <tr>
+            <td><img src="L2_Code.jpg" alt="Lesson 2 Code"></td>
+            <td><img src="L2_Output.jpg" alt="Lesson 2 Output"></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th colspan="2">LESSON 3 - 4</th>
+        </tr>
+        <tr>
+            <td><img src="L3-4_Code.jpg" alt="Lesson 3-4 Code"></td>
+            <td><img src="L3-4_Output.jpg" alt="Lesson 3-4 Output"></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th colspan="2">LESSON 5</th>
+        </tr>
+        <tr>
+            <td><img src="L5_Code.jpg" alt="Lesson 5 Code"></td>
+            <td><img src="L5_Output.jpg" alt="Lesson 5 Output"></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th colspan="2">LESSON 6-8</th>
+        </tr>
+        <tr>
+            <td><img src="L6-8_Code.jpg" alt="Lesson 6-8 Code"></td>
+            <td><img src="L6-8_Output.jpg" alt="Lesson 6-8 Output"></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
